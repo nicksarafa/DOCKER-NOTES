@@ -7,6 +7,8 @@ Notes I've accumulated while getting started with Docker
 
 - [dockviz](https://github.com/justone/dockviz) cli for simpler, less noisy docker inspection, and visualization
 
+-[Docker-logs bash script](https://gist.github.com/yarcowang/370e63e68972afbff970)
+
 ---
 
 # Questions
@@ -70,6 +72,8 @@ What does the lifecycle of a container look like?
 `pull`
 
 `push`
+
+`rename`
 
 `rm`
 
