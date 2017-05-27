@@ -19,8 +19,12 @@ Notes I've accumulated while getting started with Docker
 
 `commit -m "commit message here" DOCKER_TAG_ID`
 
+`tag`
+  - `docker tag NAME_OF_CONTAINER GCLOUD_REGION.gcr.io/GCLOUD_PROJECT_NAME/GCLOUD_PROJECT_ID`
+
 `push`
   - to your preferred Docker container registry
+  - `gcloud docker -- push GCLOUD_REGION.gcr.io/GCLOUD_PROJECT_ID/LOCAL_TAGGED_CONTAINER_ID_NUMBER`
 
 ---
 
