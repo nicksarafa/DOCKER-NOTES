@@ -43,9 +43,15 @@ What does the lifecycle of a container look like?
 
 `attach`
 
+`build`
+
 `commit`
 
 `container`
+
+`diff`
+
+`history`
 
 `image`
 
@@ -55,13 +61,23 @@ What does the lifecycle of a container look like?
 
 `kill`
 
+`logs`
+
+`ps`
+
+`ps -a`
+
 `pull`
 
 `push`
 
 `rm`
 
+`rm -f` \\ or `--force`
+
 `start`
+
+`tag`
 
 `stop`
 
