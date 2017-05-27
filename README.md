@@ -1,37 +1,71 @@
-# Notes on Docker
+# DOCKER NOTES
+Notes I've accumulated while getting started with Docker
+
+---
+
+# Questions
 
 Where does kubernetes fit into the picture?
-A Docker container has how many nodes/pods/clusters/pools? and what are the relationship(s) between these terms?
-Image - container - running container - container
 
-# Bash commands
-`$ docker`
+A Docker container has how many nodes/pods/clusters/pools? and what are the relationship(s) between these terms?
+
+What does the lifecycle of a container look like?
+  - image <-> container <-> started container <-> attached container <-> stopped container <-> etc.
+
+---
+
+# Bash commands 
+
+(all commands have to be prepended with `docker `)
+
 `attach`
+
 `commit`
+
 `container`
+
 `image`
+
 `images`
+
 `kill`
+
 `pull`
+
 `push`
+
 `rm`
+
 `start`
+
 `stop`
+
+---
 
 Following attachment to Docker container.. Here are some useful linux commands
 
-`$`
-`exit`
-`apt-get update`
-`touch .env`
 `adduser --disabled-password --gecos '' NAME_OF_NEW_USER`
-`npm install --quiet`
+
 `apt-get install vim`
 
-# File(s)
+`apt-get update`
 
-- Dockerfile
-- .dockerignore
-- .docker-compose.yml || .docker-compose.yaml
-- app.yaml (Google Cloud)
-- .dockercfg (Kubernetes exclusive?)
+`exit`
+
+`npm install --quiet`
+
+`touch .env`
+
+---
+
+# Docker File Structure
+
+-- `.docker-compose.yaml` (may also be .docker-compose.yml)
+
+-- `.dockercfg` (Kubernetes exclusive?)
+
+-- `.dockerignore`
+
+-- `Dockerfile`
+
+-- `app.yaml` (Google Cloud)
