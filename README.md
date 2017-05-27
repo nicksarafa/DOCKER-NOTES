@@ -14,7 +14,24 @@ What does the lifecycle of a container look like?
 
 ---
 
-# Bash commands 
+# Docker Components
+(documenting on an on-going basis. May not be accurate explanation(s)
+
+- `Id`
+  - key
+
+- `Container`
+  - key
+
+- `Hostname`
+  - key
+
+- `layers`
+  - chronological many sha hashes
+
+---
+
+# Docker CLI
 
 (all commands have to be prepended with `docker `)
 
@@ -27,6 +44,8 @@ What does the lifecycle of a container look like?
 `image`
 
 `images`
+
+`inspect`
 
 `kill`
 
