@@ -3,6 +3,12 @@ Notes I've accumulated while getting started with Docker
 
 ---
 
+# Tools
+
+- [dockviz](https://github.com/justone/dockviz) cli for simpler, less noisy docker inspection, and visualization
+
+---
+
 # Questions
 
 Where does kubernetes fit into the picture?
