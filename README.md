@@ -3,6 +3,27 @@ Notes I've accumulated while getting started with Docker
 
 ---
 
+# Container Lifecycle
+
+`run`
+ - image --> container
+
+`start`
+ - container --> running container
+
+`stop`
+ - running container --> container
+
+`attach`
+  - make changes
+
+`commit -m "commit message here" DOCKER_TAG_ID`
+
+`push`
+  - to your preferred Docker container registry
+
+---
+
 # Tools
 
 - [dockviz](https://github.com/justone/dockviz) cli for simpler, less noisy docker inspection, and visualization
@@ -78,6 +99,8 @@ What does the lifecycle of a container look like?
 `rm`
 
 `rm -f` \\ or `--force`
+
+`run`
 
 `start`
 
