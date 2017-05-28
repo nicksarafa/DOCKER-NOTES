@@ -188,5 +188,5 @@ Following attachment to Docker container.. Here are some useful linux commands
 - print dangling, useless images to console
 - useful for exposing cached images with `<none>` tag following image cleanups
 
-`docker images prune`
+`docker image prune`
 - remove all dangling images
