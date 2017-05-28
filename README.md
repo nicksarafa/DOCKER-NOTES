@@ -7,6 +7,14 @@ Notes I've accumulated while getting started with Docker
 
 Instructions on how to build the image
 
+`ARG`
+- "The ARG instruction defines a variable that users can pass at build-time to the builder with the docker build command using the --build-arg <varname>=<value> flag"
+
+```
+ARG USERNAME=exampleusername
+RUN useradd $USERNAME
+```
+
 `FROM`
 
 `COPY example.js .`
