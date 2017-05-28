@@ -33,9 +33,10 @@ RUN useradd $USERNAME
 `docker build -t mydockerexample`
 - `-t` specifies the name of our Docker image
 
-`docker run -p PORT:PORT -d mydockerexample`
+`docker run -d -p PORT:PORT --name mydockerexample`
 - `-p` maps a host port to a container port
 - `-d` run docker image as background daemon
+- `--name` assigns name to container
 
 Verify container was built locally by opening `http://localhost:PORT`
 
