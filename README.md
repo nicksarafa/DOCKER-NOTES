@@ -3,6 +3,34 @@ Notes I've accumulated while getting started with Docker
 
 ---
 
+# Dockerfile
+
+Instructions on how to build the image
+
+`FROM`
+
+`COPY example.js .`
+- Copies `./example.js` from project into our image
+
+`EXPOSE PORT`
+- Like forwarding a PORT through Docker's built in 'firewall'
+- Docker container listens on PORT 8000 by default
+
+`CMD`
+- Excutable command to run usually found at the end of our Dockerfile
+- Common command is `node index.js`
+
+# Building the Dockerfile
+
+`docker build -t mydockerexample`
+- `-t` specifies the name of our Docker image
+
+`docker run -p PORT:PORT mydockerexample`
+- `-p` maps a host port to a container port
+
+Verify container was built locally by opening `http://localhost:PORT`
+
+
 # Container Lifecycle
 
 `run`
