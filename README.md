@@ -223,3 +223,5 @@ Following attachment to Docker container.. Here are some useful linux commands
 
 `docker image prune`
 - remove all dangling images
+
+`docker exec -it "EXAMPLE-ID-OF-RUNNING-CONTAINER" bash` // run `docker ps` to see a list of running containers, and `docker ps -a` to see a list of all containers, running, or static
