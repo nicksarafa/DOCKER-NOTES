@@ -28,20 +28,28 @@ RUN useradd $USERNAME
 - Excutable command to run usually found at the end of our Dockerfile
 - Common command is `node index.js`
 
-# Building the Dockerfile
+## Build The Container
 
-`docker build -t mydockerexample`
-- `-t` specifies the name of our Docker image
+`docker build -t EXAMPLE ./EXAMPLE-DOCKERFILE-PATH` // <== docker containers require a relative path as the final parameter. You will forget this and struggle to figure out why nothings working.. And that's okay.. Welcome to Docker
 
-`docker run -d -p PORT:PORT --name mydockerexample`
+# ******* #
+# WARNING #
+# ******* #
+
+- `-t` means different things to differnt events in a Docker container's lifecycle, as do other shorthand flags, such as `-p`, `-d`, `-Esf` (shorthand for `--EXAMPLE-shorthand-flag`)
+
+- we may also chain together shorthand commands, but i advise against doing so, and suggest you instead type out the commands verbatim
+
+## Run the container
+
+`docker run -d -p PORT:PORT --name EXAMPLE`
 - `-p` maps a host port to a container port
 - `-d` run docker image as background daemon
 - `--name` assigns name to container
 
 Verify container was built locally by opening `http://localhost:PORT`
 
-
-# Container Lifecycle
+## Container Lifecycle
 
 `run`
  - image --> container
@@ -181,6 +189,29 @@ Following attachment to Docker container.. Here are some useful linux commands
 -- `Dockerfile`
 
 -- `app.yaml` (Google Cloud)
+
+---
+
+# ----------------------- #
+# Common `image` Commands #
+# ----------------------- #
+
+-- `docker images`                             // note the second argument, `image__s__` is plural && lists all local images
+
+-- `docker image rm EXAMPLE-IMAGE-REPOSITORY` // note the second argument, `image`, is singular
+
+-- `docker image rm __-f__ EXAMPLE-IMAGE-REPOSITY` // __force__ remove image
+
+# ------- #
+# WARNING #
+# ------- #
+
+- You will repeatedly run the wrong force remove command (`docker -rm -rf`) // the `-r` being extrenuous
+
+ - This happens because we've developed a bad habit of force removing all the things. Be careful force removing anything inside containers as irreconcilable damage to critical infastruture isn't hard to come by if you don't know what you're doing
+
+
+---
 
 ---
 
