@@ -3,6 +3,18 @@ Notes I've accumulated while getting started with Docker
 
 ---
 
+# [Save/Load Docker images locally as `.tar` files](https://docs.docker.com/engine/reference/commandline/save/)
+
+### Save
+
+`docker save EXAMPLE_IMAGE_ID > ./PATH/TO/EXAMPLEIMAGENAME.tar`
+
+### Load
+
+`docker load -i ./PATH/TO/EXAMPLEIMAGENAME.tar`
+
+***
+
 # Dockerfile
 
 Instructions on how to build the image
