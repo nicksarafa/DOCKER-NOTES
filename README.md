@@ -3,6 +3,12 @@ Notes I've accumulated while getting started with Docker
 
 ---
 
+# [Docker history](https://docs.docker.com/engine/reference/commandline/history/)
+
+`docker history --no-trunc=true EXAMPLE_IMAGE_ID`
+
+***
+
 # [Save/Load Docker images locally as `.tar` files](https://docs.docker.com/engine/reference/commandline/save/)
 
 ### Save
