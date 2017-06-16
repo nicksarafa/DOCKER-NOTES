@@ -225,3 +225,5 @@ Following attachment to Docker container.. Here are some useful linux commands
 - remove all dangling images
 
 `docker exec -it "EXAMPLE-ID-OF-RUNNING-CONTAINER" bash` // run `docker ps` to see a list of running containers, and `docker ps -a` to see a list of all containers, running, or static
+
+`docker exec -d EXAMPLE_DOCKER_ID bash -c "yarn start"` // run command against docker container as a background dameon (replace `-d` with `-it` to run as interactive shell)
